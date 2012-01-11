@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Pentomino</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/problem/pentomino_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/problem/pentomino.rb">lib/problem/pentomino.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-empty_board">#empty_board</a></li>
+					
+					<li><a href="#method-i-find_free_place">#find_free_place</a></li>
+					
+					<li><a href="#method-i-load_game_board">#load_game_board</a></li>
+					
+					<li><a href="#method-i-load_pieces">#load_pieces</a></li>
+					
+					<li><a href="#method-i-load_standard_game">#load_standard_game</a></li>
+					
+					<li><a href="#method-i-possible_to_find_solution%3F">#possible_to_find_solution?</a></li>
+					
+					<li><a href="#method-i-put_piece">#put_piece</a></li>
+					
+					<li><a href="#method-i-remove_piece">#remove_piece</a></li>
+					
+					<li><a href="#method-i-show_board">#show_board</a></li>
+					
+					<li><a href="#method-i-solution%3F">#solution?</a></li>
+					
+					<li><a href="#method-i-solve">#solve</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./lib/sample1_txt.html">sample1.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample2_txt.html">sample2.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample3_txt.html">sample3.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample4_txt.html">sample4.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample5_txt.html">sample5.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample6_txt.html">sample6.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample7_txt.html">sample7.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample8_txt.html">sample8.txt</a></li>
+				
+					<li class="file"><a href="./nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+					<li class="file"><a href="./test/test_sample3_txt.html">test_sample3.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Coordinate.html">Coordinate</a></li>
+				
+					<li><a href="./Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="./Piece.html">Piece</a></li>
+				
+					<li><a href="./TestPiece.html">TestPiece</a></li>
+				
+					<li><a href="./TestProblem.html">TestProblem</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Pentomino</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="height-attribute-method" class="method-detail">
+				<a name="height"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">height</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="width-attribute-method" class="method-detail">
+				<a name="width"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">width</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="pieces-attribute-method" class="method-detail">
+				<a name="pieces"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">pieces</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(file)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Load problem from file If file is in wrong format, program starts solving
+normal pentomino Otherwise solves problme in file
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 12</span>
+12:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">file</span>)
+13:    
+14:     <span class="ruby-keyword kw">begin</span>
+15:       <span class="ruby-ivar">@f</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file</span>,<span class="ruby-value str">&quot;r&quot;</span>)
+16:       <span class="ruby-identifier">load_game_board</span>
+17:       <span class="ruby-identifier">load_pieces</span>
+18:     <span class="ruby-keyword kw">rescue</span> <span class="ruby-constant">Exception</span>
+19:       <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Chyba: #{$!}&quot;</span>
+20:       <span class="ruby-identifier">load_standard_game</span>
+21:     <span class="ruby-keyword kw">end</span>
+22:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="empty-board-method" class="method-detail ">
+				<a name="method-i-empty_board"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">empty_board</span><span
+						class="method-args">(board)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Erase playing board
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="empty-board-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 175</span>
+175:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">empty_board</span>(<span class="ruby-identifier">board</span>)
+176:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">board</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+177:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">board</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+178:         <span class="ruby-identifier">board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">0</span>
+179:       <span class="ruby-keyword kw">end</span>
+180:     <span class="ruby-keyword kw">end</span>
+181:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="find-free-place-method" class="method-detail ">
+				<a name="method-i-find_free_place"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find_free_place</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Finds first free slot in the board. First left-right, than top-bottom
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="find-free-place-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 129</span>
+129:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">find_free_place</span>
+130:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+131:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+132:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]<span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+133:           <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Coordinate</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>)
+134:         <span class="ruby-keyword kw">end</span>
+135:       <span class="ruby-keyword kw">end</span>
+136:     <span class="ruby-keyword kw">end</span> 
+137:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-game-board-method" class="method-detail ">
+				<a name="method-i-load_game_board"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_game_board</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Load board from file
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-game-board-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 155</span>
+155:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_game_board</span>
+156:     <span class="ruby-identifier">line</span> = <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+157:     <span class="ruby-identifier">tokens</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-regexp re">/[-+]?\d*\.?\d+/</span>)
+158:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">!=</span> <span class="ruby-value">2</span>
+159:       <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Spatny format vstupu (hraci plocha). Bude automaticky vygenerovana.&quot;</span>
+160:       <span class="ruby-ivar">@width</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">rand</span>(<span class="ruby-value">30</span>))
+161:       <span class="ruby-ivar">@height</span> = <span class="ruby-value">150</span> <span class="ruby-operator">/</span> <span class="ruby-ivar">@width</span>
+162:       <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Byla vygenerovana hraci plocha #{@width} x #{@height}&quot;</span>
+163:       <span class="ruby-keyword kw">return</span>
+164:     <span class="ruby-keyword kw">end</span>
+165:     
+166:     <span class="ruby-ivar">@width</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">tokens</span>[<span class="ruby-value">0</span>])
+167:     <span class="ruby-ivar">@height</span> = <span class="ruby-constant">Integer</span>(<span class="ruby-identifier">tokens</span>[<span class="ruby-value">1</span>])
+168:     
+169:     <span class="ruby-ivar">@board</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@height</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>)}
+170:     <span class="ruby-identifier">empty_board</span>(<span class="ruby-ivar">@board</span>)
+171:     
+172:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-pieces-method" class="method-detail ">
+				<a name="method-i-load_pieces"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_pieces</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Load user-defined pieces from file
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-pieces-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 297</span>
+297:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_pieces</span>
+298:     <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+299:     <span class="ruby-identifier">line</span> = <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+300:     <span class="ruby-identifier">tokens</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-regexp re">/[-+]?\d*\.?\d+/</span>)
+301:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">!=</span> <span class="ruby-value">1</span>
+302:       <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Spatny format vstupu. Ocekavano cislo s poctem definovanych kosticek.
+303:       Bude vyresena zakladni verze pentomina.&quot;</span>
+304:       <span class="ruby-identifier">load_standard_game</span>
+305:       <span class="ruby-keyword kw">return</span>
+306:     <span class="ruby-keyword kw">end</span>
+307:     
+308:     <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+309:     <span class="ruby-ivar">@pieces</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">tokens</span>[<span class="ruby-value">0</span>]))
+310:     <span class="ruby-ivar">@pieces</span>.<span class="ruby-identifier">fill</span>(<span class="ruby-keyword kw">nil</span>)
+311:        
+312:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@pieces</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+313:       <span class="ruby-identifier">line</span> = <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+314:       <span class="ruby-identifier">tokens</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-regexp re">/[-+]?\d*\.?\d+/</span>)
+315:       <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+316:       
+317:       <span class="ruby-keyword kw">while</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+318:         <span class="ruby-identifier">shape_line</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+319:         <span class="ruby-identifier">value</span> = <span class="ruby-value">0</span>
+320:         <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+321:            
+322:           <span class="ruby-identifier">piece_index</span>=<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">tokens</span>[<span class="ruby-identifier">j</span>])
+323:         
+324:           <span class="ruby-comment cmt">#Kontroluje zda v zadani kosticky nejsou ruzna cisla</span>
+325:           <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">piece_index!</span>=<span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+326:             <span class="ruby-identifier">value</span> = <span class="ruby-identifier">piece_index</span>
+327:           <span class="ruby-keyword kw">end</span>
+328:            
+329:           <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">value!</span>=<span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">piece_index</span> <span class="ruby-operator">!=</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">piece_index</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>)
+330:             <span class="ruby-identifier">raise</span> <span class="ruby-constant">Exception</span>, <span class="ruby-value str">&quot;Spatny vstup. Chyba v zadani kosticek.&quot;</span>
+331:           <span class="ruby-keyword kw">end</span>
+332:           
+333:            
+334:           <span class="ruby-identifier">shape_line</span>.<span class="ruby-identifier">push</span>(<span class="ruby-constant">Integer</span>(<span class="ruby-identifier">tokens</span>[<span class="ruby-identifier">j</span>]))
+335:            
+336:         <span class="ruby-keyword kw">end</span>
+337:         <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>(<span class="ruby-identifier">shape_line</span>)
+338:         <span class="ruby-identifier">line</span> = <span class="ruby-ivar">@f</span>.<span class="ruby-identifier">gets</span>
+339:         <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">line</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+340:           <span class="ruby-keyword kw">break</span>
+341:         <span class="ruby-keyword kw">end</span>
+342:         <span class="ruby-identifier">tokens</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">scan</span>(<span class="ruby-regexp re">/[-+]?\d*\.?\d+/</span>)
+343:         
+344:       <span class="ruby-keyword kw">end</span>
+345:       
+346:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@pieces</span>[<span class="ruby-identifier">value</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>
+347:         <span class="ruby-ivar">@pieces</span>[<span class="ruby-identifier">value</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] = <span class="ruby-identifier">piece</span>
+348:       <span class="ruby-keyword kw">else</span>
+349:         <span class="ruby-identifier">raise</span> <span class="ruby-constant">Exception</span>, <span class="ruby-value str">&quot;Duplikovane zadani kosticky.&quot;</span>
+350:       <span class="ruby-keyword kw">end</span>
+351:     <span class="ruby-keyword kw">end</span>
+352:    
+353:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-standard-game-method" class="method-detail ">
+				<a name="method-i-load_standard_game"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_standard_game</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Loads standard game
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-standard-game-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 184</span>
+184:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_standard_game</span>
+185:     <span class="ruby-ivar">@width</span> = <span class="ruby-value">6</span>
+186:     <span class="ruby-ivar">@height</span> = <span class="ruby-value">10</span>
+187:     
+188:     <span class="ruby-ivar">@board</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@height</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@width</span>)}
+189:     
+190:     <span class="ruby-identifier">empty_board</span>(<span class="ruby-ivar">@board</span>)
+191:     
+192:     <span class="ruby-ivar">@pieces</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">12</span>)
+193:     
+194:     <span class="ruby-comment cmt">#F</span>
+195:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+196:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">1</span>,<span class="ruby-value">1</span>])
+197:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">1</span>,<span class="ruby-value">1</span>])
+198:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">1</span>])
+199:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">0</span>] = <span class="ruby-identifier">piece</span>
+200:    
+201:     
+202:     <span class="ruby-comment cmt">#I</span>
+203:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+204:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">2</span>])
+205:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">2</span>])
+206:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">2</span>])
+207:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">2</span>])
+208:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">2</span>])
+209:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">1</span>] = <span class="ruby-identifier">piece</span>
+210:    
+211:     
+212:     <span class="ruby-comment cmt">#L</span>
+213:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+214:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">3</span>])
+215:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">3</span>])
+216:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">3</span>])
+217:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">3</span>,<span class="ruby-value">3</span>])
+218:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">2</span>] = <span class="ruby-identifier">piece</span>
+219:    
+220:     
+221:     <span class="ruby-comment cmt">#N</span>
+222:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+223:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">4</span>])
+224:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">4</span>,<span class="ruby-value">4</span>])
+225:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">4</span>])
+226:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">4</span>])
+227:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">3</span>] = <span class="ruby-identifier">piece</span>
+228:   
+229:     
+230:     <span class="ruby-comment cmt">#P</span>
+231:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+232:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">5</span>,<span class="ruby-value">5</span>])
+233:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">5</span>,<span class="ruby-value">5</span>])
+234:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">5</span>])
+235:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">4</span>] = <span class="ruby-identifier">piece</span>
+236:    
+237:     
+238:     <span class="ruby-comment cmt">#T</span>
+239:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+240:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">6</span>,<span class="ruby-value">6</span>,<span class="ruby-value">6</span>])
+241:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">6</span>])
+242:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">6</span>])
+243:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">5</span>] = <span class="ruby-identifier">piece</span>
+244:    
+245:     
+246:     <span class="ruby-comment cmt">#U</span>
+247:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+248:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">7</span>,<span class="ruby-value">0</span>,<span class="ruby-value">7</span>])
+249:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">7</span>,<span class="ruby-value">7</span>,<span class="ruby-value">7</span>])
+250:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">6</span>] = <span class="ruby-identifier">piece</span>
+251:     
+252:     
+253:     <span class="ruby-comment cmt">#V</span>
+254:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+255:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">8</span>])
+256:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">8</span>])
+257:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">8</span>,<span class="ruby-value">8</span>,<span class="ruby-value">8</span>])
+258:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">7</span>] = <span class="ruby-identifier">piece</span>
+259:     
+260:     
+261:     <span class="ruby-comment cmt">#W</span>
+262:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+263:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">9</span>])
+264:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">9</span>,<span class="ruby-value">9</span>])
+265:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">9</span>,<span class="ruby-value">9</span>])
+266:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">8</span>] = <span class="ruby-identifier">piece</span>
+267:     
+268:     
+269:     <span class="ruby-comment cmt">#X</span>
+270:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+271:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">10</span>])
+272:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">10</span>,<span class="ruby-value">10</span>,<span class="ruby-value">10</span>])
+273:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">10</span>])
+274:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">9</span>] = <span class="ruby-identifier">piece</span>
+275:    
+276:     
+277:     <span class="ruby-comment cmt">#Y</span>
+278:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+279:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">11</span>])
+280:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">11</span>,<span class="ruby-value">11</span>])
+281:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">11</span>])
+282:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">11</span>])
+283:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">10</span>] = <span class="ruby-identifier">piece</span>
+284:    
+285:     
+286:     <span class="ruby-comment cmt">#Z</span>
+287:     <span class="ruby-identifier">piece</span> = <span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+288:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">12</span>,<span class="ruby-value">12</span>])
+289:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">12</span>])
+290:     <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">add_line</span>([<span class="ruby-value">0</span>,<span class="ruby-value">12</span>,<span class="ruby-value">12</span>])
+291:     <span class="ruby-ivar">@pieces</span>[<span class="ruby-value">11</span>] = <span class="ruby-identifier">piece</span>
+292:    
+293:     
+294:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="possible-to-find-solution--method" class="method-detail ">
+				<a name="method-i-possible_to_find_solution%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">possible_to_find_solution?</span><span
+						class="method-args">(pieces,board)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Checks if board has enough slot for pieces
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="possible-to-find-solution--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 65</span>
+65:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">possible_to_find_solution?</span>(<span class="ruby-identifier">pieces</span>,<span class="ruby-identifier">board</span>)
+66:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">pieces</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+67:       <span class="ruby-identifier">board</span><span class="ruby-operator">-=</span><span class="ruby-identifier">pieces</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">consist_of</span>
+68:     <span class="ruby-keyword kw">end</span>
+69:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">board</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+70:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="put-piece-method" class="method-detail ">
+				<a name="method-i-put_piece"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">put_piece</span><span
+						class="method-args">(piece, index, row, col)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tries to put piece in given rotatation to given coordinates
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="put-piece-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 96</span>
+ 96:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">put_piece</span>(<span class="ruby-identifier">piece</span>, <span class="ruby-identifier">index</span>, <span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>)
+ 97:     <span class="ruby-identifier">tmp_row</span> = <span class="ruby-identifier">row</span>
+ 98:     <span class="ruby-identifier">tmp_col</span> = <span class="ruby-identifier">col</span>
+ 99:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">piece</span>.<span class="ruby-identifier">height</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+100:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tmp_row</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@height</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+101:         <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+102:         <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+103:       <span class="ruby-keyword kw">end</span>
+104:       
+105:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">piece</span>.<span class="ruby-identifier">width</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+106:          <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tmp_col</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@width</span> <span class="ruby-operator">-</span><span class="ruby-value">1</span>
+107:           <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+108:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+109:         <span class="ruby-keyword kw">end</span>
+110:         
+111:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">tmp_row</span>][<span class="ruby-identifier">tmp_col</span>] <span class="ruby-operator">==</span><span class="ruby-value">0</span>
+112:           <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">tmp_row</span>][<span class="ruby-identifier">tmp_col</span>] = <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]
+113:         <span class="ruby-keyword kw">else</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">piece</span>.<span class="ruby-identifier">shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">!=</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">tmp_row</span>][<span class="ruby-identifier">tmp_col</span>] <span class="ruby-operator">!=</span><span class="ruby-value">0</span>
+114:             <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+115:             <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+116:           <span class="ruby-keyword kw">end</span>
+117:         <span class="ruby-keyword kw">end</span>
+118:         <span class="ruby-identifier">tmp_col</span> = <span class="ruby-identifier">tmp_col</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+119:        
+120:       <span class="ruby-keyword kw">end</span>
+121:       <span class="ruby-identifier">tmp_row</span><span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+122:       <span class="ruby-identifier">tmp_col</span>= <span class="ruby-identifier">col</span>
+123:       
+124:     <span class="ruby-keyword kw">end</span>
+125:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+126:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="remove-piece-method" class="method-detail ">
+				<a name="method-i-remove_piece"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">remove_piece</span><span
+						class="method-args">(index)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Removes piece from board
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="remove-piece-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 141</span>
+141:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">index</span>)
+142:    
+143:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+144:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+145:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]<span class="ruby-operator">==</span> <span class="ruby-identifier">index</span>
+146:           <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-value">0</span>
+147:         <span class="ruby-keyword kw">end</span>
+148:       <span class="ruby-keyword kw">end</span>
+149:     <span class="ruby-keyword kw">end</span> 
+150:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="show-board-method" class="method-detail ">
+				<a name="method-i-show_board"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">show_board</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Display actual board state
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="show-board-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 73</span>
+73:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_board</span>
+74:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+75:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+76:         <span class="ruby-identifier">print</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; &quot;</span>
+77:       <span class="ruby-keyword kw">end</span>
+78:       <span class="ruby-identifier">puts</span>
+79:     <span class="ruby-keyword kw">end</span>
+80:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="solution--method" class="method-detail ">
+				<a name="method-i-solution%3F"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">solution?</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Checks if actual board is possible result
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="solution--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 83</span>
+83:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">solution?</span>
+84:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+85:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+86:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@board</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]<span class="ruby-operator">==</span><span class="ruby-value">0</span>
+87:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+88:         <span class="ruby-keyword kw">end</span>
+89:       <span class="ruby-keyword kw">end</span>
+90:     <span class="ruby-keyword kw">end</span>
+91:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+92:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="solve-method" class="method-detail ">
+				<a name="method-i-solve"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">solve</span><span
+						class="method-args">(piece, row, col, used)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Tries to put new piece on board Tries all rotations and rotations of its
+mirror
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="solve-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/pentomino.rb, line 27</span>
+27:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">solve</span>(<span class="ruby-identifier">piece</span>, <span class="ruby-identifier">row</span>, <span class="ruby-identifier">col</span>, <span class="ruby-identifier">used</span>)
+28:     <span class="ruby-identifier">tmp</span> = <span class="ruby-ivar">@pieces</span>[<span class="ruby-identifier">piece</span>] 
+29:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">7</span>
+30:       <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">piece</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+31:       <span class="ruby-identifier">used</span>[<span class="ruby-identifier">piece</span>] = <span class="ruby-keyword kw">false</span>
+32:      
+33:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-value">4</span>
+34:          <span class="ruby-identifier">tmp</span> = <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">get_mirror</span>
+35:       <span class="ruby-keyword kw">end</span>
+36:       <span class="ruby-identifier">tmp</span> = <span class="ruby-identifier">tmp</span>.<span class="ruby-identifier">rotate</span>
+37:      
+38:       <span class="ruby-identifier">put</span> = <span class="ruby-identifier">put_piece</span>(<span class="ruby-identifier">tmp</span>,<span class="ruby-identifier">piece</span>,<span class="ruby-identifier">row</span>,<span class="ruby-identifier">col</span>)
+39:       
+40:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">put</span>
+41:         <span class="ruby-identifier">used</span>[<span class="ruby-identifier">piece</span>] = <span class="ruby-keyword kw">true</span>
+42:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">solution?</span>
+43:           <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+44:         <span class="ruby-keyword kw">end</span>
+45: <span class="ruby-comment cmt">#        show_board</span>
+46: <span class="ruby-comment cmt">#        puts</span>
+47:          
+48:         <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">used</span>.<span class="ruby-identifier">size</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+49:             <span class="ruby-identifier">c</span> = <span class="ruby-identifier">find_free_place</span>
+50:             <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">not</span> <span class="ruby-identifier">used</span>[<span class="ruby-identifier">j</span>] 
+51:               <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">solve</span>(<span class="ruby-identifier">j</span>,<span class="ruby-identifier">c</span>.<span class="ruby-identifier">row</span>,<span class="ruby-identifier">c</span>.<span class="ruby-identifier">col</span>,<span class="ruby-identifier">used</span>)
+52:                  <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+53:               <span class="ruby-keyword kw">end</span>
+54:           <span class="ruby-keyword kw">end</span>
+55:           
+56:         <span class="ruby-keyword kw">end</span>
+57:       <span class="ruby-keyword kw">end</span>
+58:     <span class="ruby-keyword kw">end</span>
+59:     <span class="ruby-identifier">remove_piece</span>(<span class="ruby-identifier">piece</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)
+60:     <span class="ruby-identifier">used</span>[<span class="ruby-identifier">piece</span>] = <span class="ruby-keyword kw">false</span>
+61:     
+62:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

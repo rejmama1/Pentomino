@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Piece</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/problem/piece_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/problem/piece.rb">lib/problem/piece.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-add_line">#add_line</a></li>
+					
+					<li><a href="#method-i-consist_of">#consist_of</a></li>
+					
+					<li><a href="#method-i-get_mirror">#get_mirror</a></li>
+					
+					<li><a href="#method-i-normalize">#normalize</a></li>
+					
+					<li><a href="#method-i-rotate">#rotate</a></li>
+					
+					<li><a href="#method-i-to_s">#to_s</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+					<li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+				
+					<li class="file"><a href="./lib/sample1_txt.html">sample1.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample2_txt.html">sample2.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample3_txt.html">sample3.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample4_txt.html">sample4.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample5_txt.html">sample5.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample6_txt.html">sample6.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample7_txt.html">sample7.txt</a></li>
+				
+					<li class="file"><a href="./lib/sample8_txt.html">sample8.txt</a></li>
+				
+					<li class="file"><a href="./nbproject/private/rake-d_txt.html">rake-d.txt</a></li>
+				
+					<li class="file"><a href="./test/test_sample3_txt.html">test_sample3.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Coordinate.html">Coordinate</a></li>
+				
+					<li><a href="./Pentomino.html">Pentomino</a></li>
+				
+					<li><a href="./Piece.html">Piece</a></li>
+				
+					<li><a href="./TestPiece.html">TestPiece</a></li>
+				
+					<li><a href="./TestProblem.html">TestProblem</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Piece</h1>
+
+		<div id="description">
+			<p>
+Creates user-defined pieces
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="shape-attribute-method" class="method-detail">
+				<a name="shape"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">shape</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="width-attribute-method" class="method-detail">
+				<a name="width"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">width</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+			<div id="height-attribute-method" class="method-detail">
+				<a name="height"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">height</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+   <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 5</span>
+5:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>
+6:     <span class="ruby-ivar">@shape</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+7:     <span class="ruby-ivar">@width</span> = <span class="ruby-value">0</span>
+8:     <span class="ruby-ivar">@height</span> = <span class="ruby-value">0</span>
+9:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="add-line-method" class="method-detail ">
+				<a name="method-i-add_line"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">add_line</span><span
+						class="method-args">(array)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Adds custom shape
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="add-line-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 12</span>
+12:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">add_line</span>(<span class="ruby-identifier">array</span>)
+13:     <span class="ruby-ivar">@shape</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">array</span>)
+14:     <span class="ruby-ivar">@height</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+15:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">array</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@width</span>
+16:       <span class="ruby-ivar">@width</span> = <span class="ruby-identifier">array</span>.<span class="ruby-identifier">size</span>
+17:     <span class="ruby-keyword kw">end</span>
+18:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="consist-of-method" class="method-detail ">
+				<a name="method-i-consist_of"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">consist_of</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Evaluates number of pieces
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="consist-of-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 65</span>
+65:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">consist_of</span>
+66:     <span class="ruby-identifier">pieces</span>=<span class="ruby-value">0</span>
+67:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@height</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+68:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+69:         <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]<span class="ruby-operator">!=</span><span class="ruby-value">0</span>
+70:           <span class="ruby-identifier">pieces</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+71:         <span class="ruby-keyword kw">end</span>
+72:       <span class="ruby-keyword kw">end</span>
+73:     <span class="ruby-keyword kw">end</span>
+74:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">pieces</span>
+75:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-mirror-method" class="method-detail ">
+				<a name="method-i-get_mirror"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_mirror</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Creates mirror of the shape
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-mirror-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 49</span>
+49:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_mirror</span>
+50:     <span class="ruby-identifier">tmp_piece</span>=<span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+51:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@height</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+52:       <span class="ruby-identifier">shape_line</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+53:       
+54:       (<span class="ruby-ivar">@width</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+55:         <span class="ruby-identifier">shape_line</span>.<span class="ruby-identifier">push</span>(<span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>])
+56:       }
+57:       
+58:     
+59:       <span class="ruby-identifier">tmp_piece</span>.<span class="ruby-identifier">add_line</span>(<span class="ruby-identifier">shape_line</span>)
+60:     <span class="ruby-keyword kw">end</span>
+61:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">tmp_piece</span>
+62:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="normalize-method" class="method-detail ">
+				<a name="method-i-normalize"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">normalize</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Normalizes given shape; adds zeros to create bounded rectangle
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="normalize-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 22</span>
+22:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">normalize</span>
+23:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@height</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+24:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@width</span>
+25:         <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@width</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+26:           <span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">push</span>(<span class="ruby-value">0</span>)
+27:         <span class="ruby-keyword kw">end</span>
+28:       <span class="ruby-keyword kw">end</span>
+29:     <span class="ruby-keyword kw">end</span>
+30:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rotate-method" class="method-detail ">
+				<a name="method-i-rotate"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rotate</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Orotuje kosticku o 90 stupnu doprava; 1. radek = 1 sloupek od spoda
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rotate-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 33</span>
+33:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rotate</span>
+34:     <span class="ruby-identifier">tmp_piece</span>=<span class="ruby-constant">Piece</span>.<span class="ruby-identifier">new</span>
+35:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@width</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>
+36:       <span class="ruby-identifier">shape_line</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+37:       
+38:       (<span class="ruby-ivar">@height</span><span class="ruby-operator">-</span><span class="ruby-value">1</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">0</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+39:         <span class="ruby-identifier">shape_line</span>.<span class="ruby-identifier">push</span>(<span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">j</span>][<span class="ruby-identifier">i</span>])
+40:       }
+41:       
+42:     
+43:       <span class="ruby-identifier">tmp_piece</span>.<span class="ruby-identifier">add_line</span>(<span class="ruby-identifier">shape_line</span>)
+44:     <span class="ruby-keyword kw">end</span>
+45:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">tmp_piece</span>
+46:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="to-s-method" class="method-detail ">
+				<a name="method-i-to_s"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">to_s</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="to-s-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/problem/piece.rb, line 78</span>
+78:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
+79:     <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@height</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+80:       <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+81:         <span class="ruby-identifier">print</span> <span class="ruby-ivar">@shape</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>].<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; &quot;</span>
+82:       <span class="ruby-keyword kw">end</span>
+83:       <span class="ruby-identifier">puts</span>
+84:     <span class="ruby-keyword kw">end</span>
+85:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

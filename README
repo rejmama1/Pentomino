@@ -1,0 +1,8 @@
+spouštìní:
+
+ruby -I . lib/main.rb lib/sample[1-8].txt
+
+testy:
+
+ruby -I . test/test_piece.rb
+ruby -I . test/test_problem.rb
